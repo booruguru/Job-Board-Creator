@@ -4,7 +4,7 @@
 
  * Plugin Name: Job Board Creator
  * Description: Job Board Platform for WordPress
- * Version: 0.7
+ * Version: 0.8
  * License: GPL
  * Text Domain: jbc
 
@@ -26,7 +26,7 @@ require_once('inc/post-counter.php');
 require_once('inc/read-unread.php');
 require_once('inc/applications.php');
 require_once('inc/widgets.php');
-require_once('jbf/inc/of/options-framework.php');
+require_once('inc/settings/options-framework.php');
 require_once('inc/options.php');
 
 require_once('inc/shortcodes.php');
