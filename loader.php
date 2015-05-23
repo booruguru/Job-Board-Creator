@@ -33,8 +33,4 @@ require_once('inc/shortcodes.php');
 require_once('inc/profile-fields.php');
 require_once('inc/restrictions.php');
 
-require_once ('theme-installer.php');
-function jbc_activate() {
-	up546E_install_jbf_theme();
-}
 register_activation_hook( __FILE__, 'jbc_activate' );
