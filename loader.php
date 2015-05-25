@@ -5,7 +5,7 @@
  * Plugin Name: Job Board Creator
  * Description: Job Board Platform for WordPress
  * Plugin URI: http://jbcreator.com
- * Version: 1.0
+ * Version: 1.0.1
  * License: GPL
  * Text Domain: jbc
 
