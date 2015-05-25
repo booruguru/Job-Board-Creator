@@ -4,6 +4,7 @@
 
  * Plugin Name: Job Board Creator
  * Description: Job Board Platform for WordPress
+ * Plugin URI: http://jbcreator.com
  * Version: 0.8
  * License: GPL
  * Text Domain: jbc
@@ -34,3 +35,30 @@ require_once('inc/profile-fields.php');
 require_once('inc/restrictions.php');
 
 register_activation_hook( __FILE__, 'jbc_activate' );
+
+
+/* hook updater to init */
+add_action( 'init', 'jbc_updater_init' );
+
+/**
+ * Load and Activate Plugin Updater Class.
+ */
+function jbc_updater_init() {
+
+    /* Load Plugin Updater */
+    require_once( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'inc/update/autohosted.php' );
+
+    /* Updater Config */
+    $config = array(
+        'base'      => plugin_basename( __FILE__ ), //required
+        'dashboard' => false,
+        'username'  => false,
+        'key'       => '',
+        'repo_uri'  => 'http://jbcreator.userhost.net/',
+        'repo_slug' => 'jbc',
+    );
+
+    /* Load Updater Class */
+    new UserPress_Updater( $config );
+}
+  
