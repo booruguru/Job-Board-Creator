@@ -11,11 +11,11 @@ Job Board Creator turns your WordPress site into a powerful job board.
 
 == Description ==
 
-Job Board Creator turns your WordPress site into a powerful job board. Currently, JBC requires themes (such as Job Board Framework) that are specifically designed for this plugin.
+Job Board Creator turns your WordPress site into a powerful job board. Currently, JBC requires themes (such as Job Board Framework) that are specifically designed for this plugin. What's more, in order to charge a fee for job postings, you will need our PayPal Gateway plugin. Themes and plugins can be found on our web site <http://jbcreator.com>
 
 == Installation ==
 
-1. Upload `jbc.zip`via your wp-admin plugins manager.
+1. Upload `jbc.zip` via your wp-admin plugins manager.
 
 2. Activate the plugin.
 
@@ -27,9 +27,9 @@ Job Board Creator turns your WordPress site into a powerful job board. Currently
 
 == Frequently Asked Questions ==
 
-= How can I make users pay to submit a job posting? =
+= How can I make users pay  fee to submit a job posting? =
 
-Firstly, you will to download PayPal UserPayments to enable payment functionality.
+Firstly, visit <http://jbcreator.com> and download our download PayPal Gateway plugin to enable payment functionality.
 
 Next, visit wp-admin/jobs/views/ and select (or create a new) "view" and define a price under the "price" field.
 
@@ -38,6 +38,7 @@ Next, visit wp-admin/jobs/views/ and select (or create a new) "view" and define 
 You can create a job posting from your admin area (wp-admin -> jobs -> add new). However, generally, users are meant to submit using your site's frontend via 
 http://example.com/post/ 
 
+However, your URL may differ if you have defined a custom page on your JBC settings page.
 
 == Troubleshooting ==
 
@@ -45,14 +46,8 @@ http://example.com/post/
 
 Make sure to check your junk/spam folder. Otherwise, contact your email provider as they may blocking emails from your server for some reason.
 
+NOTE: Generally you shouldn't send e-mails using your server. Instead, you should use a specialized e-mail service provider (such as MailJet or SendInBlue).
 
 == Changelog ==
-= 0.7 =
-* default theme-installer (Job Board Framework) 
-
-= 0.5 =
-* added "sticky" functionality
-
-= 0.4 =
-* removed extraneous hidden files 
-
+= 1.0.1 =
+* Official Release
