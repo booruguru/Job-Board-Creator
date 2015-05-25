@@ -59,6 +59,6 @@ function jbc_updater_init() {
     );
 
     /* Load Updater Class */
-    new UserPress_Updater( $config );
+    new JBC_Updater( $config );
 }
   
